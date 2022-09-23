@@ -1,6 +1,6 @@
 export function Footer() {
   return (
-    <footer className="bg-[#121214] py-8 px-10 text-white mt-8 flex flex-col items-center">
+    <footer className="bg-transparent py-8 px-10 text-white mt-8 flex flex-col items-center">
       <div className="flex flex-col gap-4">
         <a href="">
           <img
