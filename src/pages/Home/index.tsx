@@ -4,8 +4,6 @@ import { GameBanner } from "../../components/GameBanner";
 import { CreateAdBanner } from "../../components/CreateAdBanner";
 import { useEffect, useState } from "react";
 import { Logo } from "../../components/Logo";
-import { GameController } from "phosphor-react";
-import { Input } from "../../components/Form/Input";
 import { CreateAdModal } from "../../components/CreateAdModal";
 import axios from "axios";
 import { Footer } from "../../components/Footer";
@@ -23,7 +21,7 @@ export function Home() {
   const [games, setGames] = useState<Game[]>([]);
 
   useEffect(() => {
-    axios("http://69.164.222.113:3000/games")      
+    axios("http://localhost:3000/games")      
       .then(response => {
         setGames(response.data);
       });
