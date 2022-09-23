@@ -21,7 +21,7 @@ export function Home() {
   const [games, setGames] = useState<Game[]>([]);
 
   useEffect(() => {
-    axios("http://localhost:3000/games")      
+    axios("http://69.164.222.113:3000/games")      
       .then(response => {
         setGames(response.data);
       });
